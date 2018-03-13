@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+<ul>
+    {% for book in books %}
+    <li>
+        <a href="/book/{{book.getId()}}">{{book.getTitle()}}-{{book.getPublisher().getName()}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

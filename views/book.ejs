@@ -1,0 +1,27 @@
+<html>
+<article>
+    <section>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Price</th>
+            </tr>
+            <%for(var i = 0; i < data.length;i++){%>
+            <tr>
+                <td>< % = data [i] .id% ></td>
+                <td>< % = data [i] .title% ></td>
+                <td>< % = data [i] .author% ></td>
+                <td>< % = data [i] .publisher% ></td>
+                <td>< % = data [i] .price% ></td>
+                <td>
+                    <a> href="/book/<%=data[i].id%>"Delete</a>
+                </td>
+                <%}%>
+            </tr>
+        </table>
+    </section>
+</article>
+</html>
